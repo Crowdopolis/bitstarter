@@ -20,10 +20,13 @@ var sys = require('sys');
 
 var port = process.env.PORT || 5000;
 
-http.createServer(function(req, res){
-    fs.readFile('test.html',function (err, data){
-        res.writeHead(200, {'Content-Type': 'text/html','Content-Length':data.length});
-        res.write(data);
-        res.end();
-    });
-}).listen(port);
+fs.readFile('./index.html', function (err, html) {
+    if (err) {
+        throw err;
+    }
+    http.createServer(function(request, response) {
+        response.writeHeader(200, {"Content-Type": "text/html"});
+        response.write(html);
+        response.end();
+    }).listen(port);
+});
