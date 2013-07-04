@@ -1,13 +1,3 @@
-/*var http             = require('http');
-var mongo            = require('mongoose');
-var mongoDB          = mongo.connection;
-
-
-process.env.PORT     = undefined || 2020;
-process.env.IP       = undefined || 'localhost';
-process.env.userDB   = undefined || 'mongodb://' + process.env.IP + "/users-DEV";*/
-
-
 /*
  Automatically grade files for the presence of specified HTML tags/attributes.
  Uses commander.js and cheerio. Teaches command line application development
@@ -75,40 +65,5 @@ if(require.main == module) {
 } else {
     exports.checkHtmlFile = checkHtmlFile;
 }
-
-/*mongo.connect(process.env.userDB);
-
-mongoDB.on('error',console.error.bind(console,'connection error:'));
-
-// Master User Database Loop
-mongoDB.once('open',function callback() {
-
-    var userIDSchema = new mongo.Schema(
-        {
-            user            : {type : 'string', unique: true}, // e-mail address
-            hash            : String,                          // hashed P/P password
-            v_code          : String,                          // e-mail verification code
-            v_date          : Date                             // date verified
-        } ,
-        {
-            autoIndex : true
-        }
-    )
-
-    var userIDModel = mongo.model('userID',userIDSchema);
-
-    console.log("Connected to " + process.env.userDB+ " Ready to process user information" );
-
-    var user  = new userIDModel({user:'todd.werelius@mopholo.com',hash:null,v_code:'',v_date:''});
-
-    user.save(function(error){
-
-        if (null == error)
-            console.log("  Inserted " + user.user +"\n" );
-        else
-            console.log(" "+error.err); // 11000
-    });
-});*/
-
 
 
