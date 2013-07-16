@@ -185,7 +185,8 @@ if(require.main == module) {
         .option('-f, --file <file>'  ,'Local html file to CHECK against pattern file (default index.html)', HTMLFILE_DEFAULT)
         .parse(process.argv);
 
-    // Make sure the checks file is present (required!)
+    // Make sure the checks file is present (required!), as a not I don't like the inline default file checking
+    // of commander since I want to format msg's better, and may actually do more in the future
     assertFileExists(program.checks,"\n  ERROR: Pattern file "+program.checks+" is missing");
 
     // It's not a URL it must be a HTML file on the disk
