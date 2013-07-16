@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{Node.js Dependencies for bitstarter}" />
+    <file url="file://$PROJECT_DIR$/index.html" libraries="{startup%2Fcode%2Fbootstrap, startup%2Fcode%2Fjquery}" />
+  </component>
+</project>
+
