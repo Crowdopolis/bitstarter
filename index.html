@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>CrowdStrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -52,7 +52,7 @@
             text-align: center;
         }
         p.lead {
-            padding-top: 1.5%;
+            padding-top: 0.5%;
             font-size: 24px;
             line-height: 30px;
         }
@@ -63,7 +63,7 @@
 
             /* Video pitch and Action */
         .pitch {
-            padding: 2.5% 0;
+            padding: 1.5% 0;
         }
         .order {
             padding: 2% 0;
@@ -98,6 +98,9 @@
         .footer a {
             color: #ccccff;
         }
+        .cta-list {
+            margin-bottom : 3px;
+        }
     </style>
 </head>
 <body>
@@ -113,10 +116,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="#">Bitstarter</a>
+            <a class="brand active" href="#">CrowdStrap</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -134,19 +137,19 @@
     <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
     <div class="row-fluid heading">
         <div class="span12">
-            <h1>Product</h1>
+            <h1>CrowdStrap</h1>
         </div>
     </div>
     <div class="row-fluid subheading">
         <div class="span12">
             <!-- Special typography from Bootstrap for lead paragraph. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-            <p class="lead">One sentence description.</p>
+            <p class="lead">The startup crowd funding network that gives you total control</p>
         </div>
     </div>
     <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-            <img class="img-polaroid" src="http://placehold.it/480x300">
+            <img src="images/startup.jpg">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
@@ -158,17 +161,17 @@
                         different in horizontal and vertical layouts, illustrating
                         media queries. -->
                         <div class="linediv-l">
-                            <h3>1000</h3> <p>backers</p>
+                            <h3>0</h3> <p>backers</p>
                         </div>
                     </div>
                     <div class="span4">
                         <div class="linediv-c">
-                            <h3>$6000</h3> <p>of $10,000</p>
+                            <h3>$0</h3> <p>of $100,000</p>
                         </div>
                     </div>
                     <div class="span4">
                         <div class="linediv-r">
-                            <h3>10</h3> <p>days left</p>
+                            <h3>30</h3> <p>days left</p>
                         </div>
                     </div>
                 </div>
@@ -177,14 +180,14 @@
                 <!-- Bootstrap progress bar -->
                 <!-- http://twitter.github.io/bootstrap/components.html#progress -->
                 <div class="thermometer progress active">
-                    <div class="bar bar-success" style="width: 60%;"></div>
-                    <div class="bar bar-warning" style="width: 40%;"></div>
+                    <div class="bar bar-success" style="width:  1%;"></div>
+                    <div class="bar bar-warning" style="width:  0%;"></div>
                 </div>
             </div>
             <div class="span6 offset3 order">
                 <!-- Standard Bootstrap button. -->
                 <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-                <button class="btn btn-success btn-large">Preorder</button>
+                <button class="btn btn-success btn-large">CrowdStrap Us!</button>
             </div>
             <div class="span8 offset2 social">
                 <!-- Social buttons are not included in default Bootstrap. -->
@@ -201,21 +204,21 @@
     <!-- http://placehold.it -->
     <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-            <img class="img-polaroid" src="http://placehold.it/480x300">
+            <img src="images/crowdfans.jpg">
         </div>
         <div class="span5 copy">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-                mollis justo velit at nunc. Fusce nec egestas sem. Donec
-                fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-                volutpat lorem ut congue malesuada. In facilisis scelerisque
-                turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-                quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-                risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-                rutrum, nunc leo tempus nisl, eu mollis justo velit at
-                nunc. Fusce nec egestas sem. Donec fringilla.
+                <h3>Your idea, Your rules, Your Brand</h3>
+                <ul>
+                    <li class="cta-list">Start a CrowdStrap site in just a few minutes</li>
+                    <li class="cta-list">CrowdStrap affiliated sites promote each other</li>
+                    <li class="cta-list">Totally Customizable Reward Packages</li>
+                    <li class="cta-list">Referral Mechanism that rewards successful promoters</li>
+                    <li class="cta-list">Message, Brand, and Call to Action Themes</li>
+                    <li class="cta-list">Actionable Metrics to fine tune your message</li>
+                    <li class="cta-list">Payment Options</li>
+                </ul>
+
             </p>
         </div>
     </div>
@@ -223,21 +226,14 @@
     <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-                mollis justo velit at nunc. Fusce nec egestas sem. Donec
-                fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-                volutpat lorem ut congue malesuada. In facilisis scelerisque
-                turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-                quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-                risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-                rutrum, nunc leo tempus nisl, eu mollis justo velit at
-                nunc. Fusce nec egestas sem. Donec fringilla.
+                <h3>A/B Testing, SEO, Metrics, Funnels...</h3>
+                Leave the fund raising grunge up to us. CrowdStrap sites have built in battle tested
+                marketing features that let you fine tune your message in minutes instead of months
+                ensuring maximum success.
             </p>
         </div>
         <div class="span5 asset">
-            <img class="img-polaroid" src="http://placehold.it/480x300">
+            <img src="images/success.jpg">
         </div>
     </div>
 
@@ -252,12 +248,12 @@
                     <div class="accordion-heading">
                         <a class="accordion-toggle" data-toggle="collapse"
                            data-parent="#accordion2" href="#collapseOne">
-                            What does FAQ stand for?
+                            What can I promote in the CrowdStrap network?
                         </a>
                     </div>
                     <div id="collapseOne" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            Frequently Asked Question.
+                            As long as it's legal anything you want
                         </div>
                     </div>
                 </div>
@@ -265,12 +261,12 @@
                     <div class="accordion-heading">
                         <a class="accordion-toggle" data-toggle="collapse"
                            data-parent="#accordion2" href="#collapseTwo">
-                            What's a Frequently Asked Question?
+                            Can I sell shares in my company
                         </a>
                     </div>
                     <div id="collapseTwo" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            A question which is commonly asked by users.
+                            Sure if you want to go to jail for securities and mail order fraud. See this link for more information
                         </div>
                     </div>
                 </div>
@@ -283,11 +279,7 @@
     <!-- http://creativecommons.org/licenses/ -->
     <div class="row-fluid footer">
         <div class="span12">
-            <p>This work is licensed under
-                the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-                    By-SA 3.0
-                </a>, without all the cruft that would otherwise be
-                put at the bottom of the page.</p>
+            <p>Copyright 2013 bThere Inc. all rights reserved</p>
         </div>
     </div>
 </div>

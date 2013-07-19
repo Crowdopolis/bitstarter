@@ -4,6 +4,8 @@ var express = require('express'),
 var app   = express.createServer(express.logger());
 var index = null;
 
+app.use(express.static('./public'));
+
 app.get('/', function(request, response) {
       if (null === index)
           index = fs.readFileSync('index.html').toString();
