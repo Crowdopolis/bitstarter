@@ -1,9 +1,11 @@
-var express = require('express'),
-    fs      = require('fs');
+var express  = require('express'),
+    fs       = require('fs'),
+    favicons = require('connect-favicons');
 
 var app   = express.createServer(express.logger());
 var index = null;
 
+app.use(favicons('./public/images/icons'));
 app.use(express.static('./public'));
 
 app.get('/', function(request, response) {
